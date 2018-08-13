@@ -37,7 +37,7 @@ namespace TaskOne
 	//----------------------------------------------
 	//タスクのコンストラクタ
 	Task::Task():
-		TaskAbstract(defGroupName, defPriority),
+		TaskAbstract(defGroupName, defTaskName, defPriority),
 		res(Resource::Create())
 	{
 	}
