@@ -22,22 +22,16 @@
     <ClCompile Include="src\main.cpp">
       <Filter>ソース ファイル\System</Filter>
     </ClCompile>
-    <ClCompile Include="src\Math.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="src\UsefulFunction.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
     <ClCompile Include="src\TaskAbstract.cpp">
       <Filter>ソース ファイル\System</Filter>
     </ClCompile>
     <ClCompile Include="src\TaskSystem.cpp">
       <Filter>ソース ファイル\System</Filter>
     </ClCompile>
-    <ClCompile Include="src\TimeCounter.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
     <ClCompile Include="src\Task_TaskTwo.cpp">
+      <Filter>ソース ファイル\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Task_TaskThree.cpp">
       <Filter>ソース ファイル\Task</Filter>
     </ClCompile>
   </ItemGroup>
@@ -48,22 +42,16 @@
     <ClInclude Include="src\GameSystem.h">
       <Filter>ソース ファイル\System</Filter>
     </ClInclude>
-    <ClInclude Include="src\Math.h">
-      <Filter>ソース ファイル\System</Filter>
-    </ClInclude>
-    <ClInclude Include="src\UsefulFunction.h">
-      <Filter>ソース ファイル\System</Filter>
-    </ClInclude>
     <ClInclude Include="src\TaskAbstract.h">
       <Filter>ソース ファイル\System</Filter>
     </ClInclude>
     <ClInclude Include="src\TaskSystem.h">
       <Filter>ソース ファイル\System</Filter>
     </ClInclude>
-    <ClInclude Include="src\TimeCounter.h">
-      <Filter>ソース ファイル\System</Filter>
-    </ClInclude>
     <ClInclude Include="src\Task_TaskTwo.h">
+      <Filter>ソース ファイル\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Task_TaskThree.h">
       <Filter>ソース ファイル\Task</Filter>
     </ClInclude>
   </ItemGroup>

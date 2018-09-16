@@ -1,9 +1,9 @@
-#include "Task_TaskTwo.h"
-
-#include <iostream>
 #include "Task_TaskThree.h"
 
-namespace TaskTwo
+#include <iostream>
+#include "Task_TaskTwo.h"
+
+namespace TaskThree
 {
 	std::weak_ptr<Resource> Resource::instance;
 	//----------------------------------------------
@@ -67,7 +67,7 @@ namespace TaskTwo
 	//----------------------------------------------
 	void Task::Initialize()
 	{
-		std::cout << "タスク2を生成\n" << std::endl;
+		std::cout << "タスク1を生成\n" << std::endl;
 	}
 
 	//----------------------------------------------
@@ -75,7 +75,7 @@ namespace TaskTwo
 	//----------------------------------------------
 	void Task::Finalize()
 	{
-		std::cout << "タスク2を削除\n" << std::endl;
+		std::cout << "タスク1を削除\n" << std::endl;
 	}
 
 	//----------------------------------------------
@@ -83,23 +83,25 @@ namespace TaskTwo
 	//----------------------------------------------
 	void Task::Update()
 	{
-		std::cout << " 0 → 終了 \n 1 → タスク3を生成し、タスク2を削除" << std::endl;
+		std::cout << " 0 → 終了 \n 1 → タスク2を生成し、タスク1を削除" << std::endl;
 		int hoge;
 		std::cin >> hoge;
+
+		auto tmp = TS::taskSystem.GetTaskOne<TaskTwo::Task>(TaskTwo::defGroupName, TaskTwo::defTaskName);
 
 		switch (hoge)
 		{
 		case 0:
+			//全てのタスクを削除すると終了する
 			TS::taskSystem.AllKillTask();
 			break;
 
 		case 1:
-			TaskThree::Task::Create();
 			KillMe();
 			break;
 
 		default:
-			std::cout << "You are an idiot :) \n" << std::endl;
+			std::cout << "あのさぁ…（棒読み）\n" << std::endl;
 			break;
 		}
 	}
@@ -109,6 +111,6 @@ namespace TaskTwo
 	//----------------------------------------------
 	void Task::Draw()
 	{
-		std::cout << "タスク2の描画\n" << std::endl;
+		std::cout << "タスク1の描画\n" << std::endl;
 	}
 }

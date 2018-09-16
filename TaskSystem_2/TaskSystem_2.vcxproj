@@ -117,23 +117,19 @@
   <ItemGroup>
     <ClCompile Include="src\GameSystem.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\Math.cpp" />
+    <ClCompile Include="src\Task_TaskThree.cpp" />
     <ClCompile Include="src\Task_TaskTwo.cpp" />
-    <ClCompile Include="src\UsefulFunction.cpp" />
     <ClCompile Include="src\TaskAbstract.cpp" />
     <ClCompile Include="src\TaskSystem.cpp" />
     <ClCompile Include="src\Task_TaskOne.cpp" />
-    <ClCompile Include="src\TimeCounter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\GameSystem.h" />
-    <ClInclude Include="src\Math.h" />
+    <ClInclude Include="src\Task_TaskThree.h" />
     <ClInclude Include="src\Task_TaskTwo.h" />
-    <ClInclude Include="src\UsefulFunction.h" />
     <ClInclude Include="src\TaskAbstract.h" />
     <ClInclude Include="src\TaskSystem.h" />
     <ClInclude Include="src\Task_TaskOne.h" />
-    <ClInclude Include="src\TimeCounter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
